@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/static/css/style.css">
+	<title>BATTLE GROUNDS TEST</title>
+</head>
+<body>
+
+	<header>
+		<h1>배틀그라운드 테스트</h1>
+		
+	</header>
+
+	<section>
+		<div>
+			<div class="map">
+				<img src="/static/img/{{q_context.id}}.png" width="400" height="400">
+			</div>
+			<div class="question">
+				<h3>질문{{q_context.id}}</h3>
+				<h4>{{q_context.content}}</h4>
+				{% for a in a_context_list %}
+				<label><input type="radio" name="grade" value="1">{{ a.content }}</label>
+				{% endfor %}
+				<br><br>
+				<button>다음 문제</button>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>Hyunsun</p>
+	</footer>
+</body>
+</html>

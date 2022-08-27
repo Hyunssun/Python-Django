@@ -1,0 +1,23 @@
+html, body {
+	padding: 5px;
+}
+
+header {
+	background: rgb(255, 170, 0);
+	padding: 10px;
+}
+
+section {
+	background: rgb(200, 200, 200);
+}
+
+section > div{
+	padding: 50px;
+	text-align : center;
+} 
+
+footer{
+	float: right;
+}
+
+header h1 {text-align : center;}

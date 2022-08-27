@@ -130,6 +130,14 @@
         "documentation": {}
     },
     {
+        "label": "upload",
+        "importPath": "distutils.command.upload",
+        "description": "distutils.command.upload",
+        "isExtraImport": true,
+        "detail": "distutils.command.upload",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -143,6 +151,38 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "Answer",
+        "importPath": "pybo.models",
+        "description": "pybo.models",
+        "isExtraImport": true,
+        "detail": "pybo.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "pybo.models",
+        "description": "pybo.models",
+        "isExtraImport": true,
+        "detail": "pybo.models",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -222,7 +262,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "ROOT_URLCONF = 'config.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "peekOfCode": "ROOT_URLCONF = 'config.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR/'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -231,7 +271,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR/'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -267,7 +307,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'ko-kr'\nTIME_ZONE = 'Asia/Seoul'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'ko-kr'\nTIME_ZONE = 'Asia/Seoul'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -276,7 +316,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "TIME_ZONE = 'Asia/Seoul'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'Asia/Seoul'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_DIRS = (",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -285,7 +325,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_DIRS = (\n    os.path.join(BASE_DIR, 'static'),",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -294,7 +334,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_DIRS = (\n    os.path.join(BASE_DIR, 'static'),\n)",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -303,7 +343,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_DIRS = (\n    os.path.join(BASE_DIR, 'static'),\n)",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -312,7 +352,16 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_DIRS = (\n    os.path.join(BASE_DIR, 'static'),\n)",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "STATICFILES_DIRS = (\n    os.path.join(BASE_DIR, 'static'),\n)",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -346,10 +395,10 @@
     {
         "label": "Migration",
         "kind": 6,
-        "importPath": "pybo.migrations.0002_gametable",
-        "description": "pybo.migrations.0002_gametable",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('pybo', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='GameTable',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('game_name', models.CharField(max_length=200)),",
-        "detail": "pybo.migrations.0002_gametable",
+        "importPath": "pybo.migrations.0002_question_image",
+        "description": "pybo.migrations.0002_question_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('pybo', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='question',\n            name='image',\n            field=models.ImageField(null=True, upload_to=''),\n        ),",
+        "detail": "pybo.migrations.0002_question_image",
         "documentation": {}
     },
     {
@@ -366,7 +415,7 @@
         "kind": 6,
         "importPath": "pybo.models",
         "description": "pybo.models",
-        "peekOfCode": "class Question(models.Model):\n    subject = models.CharField(max_length=200)\n    content = models.TextField()\n    create_date = models.DateTimeField()\n    image = models.ImageField()\n    def __str__(self):\n        return self.subject\nclass Answer(models.Model):\n    question = models.ForeignKey(Question, on_delete=models.CASCADE)\n    content = models.TextField()",
+        "peekOfCode": "class Question(models.Model):\n    subject = models.CharField(max_length=200)\n    content = models.TextField()\n    create_date = models.DateTimeField()\n    image = models.ImageField(null=True, upload_to=\"\")\nclass Answer(models.Model):\n    question = models.ForeignKey(Question, on_delete=models.CASCADE)\n    content = models.TextField()\n    create_date = models.DateTimeField()",
         "detail": "pybo.models",
         "documentation": {}
     },
@@ -375,16 +424,7 @@
         "kind": 6,
         "importPath": "pybo.models",
         "description": "pybo.models",
-        "peekOfCode": "class Answer(models.Model):\n    question = models.ForeignKey(Question, on_delete=models.CASCADE)\n    content = models.TextField()\n    create_date = models.DateTimeField()\nclass GameTable(models.Model):\n    game_name = models.CharField(max_length=200)",
-        "detail": "pybo.models",
-        "documentation": {}
-    },
-    {
-        "label": "GameTable",
-        "kind": 6,
-        "importPath": "pybo.models",
-        "description": "pybo.models",
-        "peekOfCode": "class GameTable(models.Model):\n    game_name = models.CharField(max_length=200)",
+        "peekOfCode": "class Answer(models.Model):\n    question = models.ForeignKey(Question, on_delete=models.CASCADE)\n    content = models.TextField()\n    create_date = models.DateTimeField()",
         "detail": "pybo.models",
         "documentation": {}
     },
@@ -393,7 +433,7 @@
         "kind": 5,
         "importPath": "pybo.urls",
         "description": "pybo.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('question/<int:page_question_id>', views.question, name=\"detail\"),\n]",
         "detail": "pybo.urls",
         "documentation": {}
     },
@@ -402,7 +442,16 @@
         "kind": 2,
         "importPath": "pybo.views",
         "description": "pybo.views",
-        "peekOfCode": "def index(request):\n    return HttpResponse(\"안녕하세요 pybo에 오신것을 환영합니다.\")",
+        "peekOfCode": "def index(request):\n    return HttpResponse(\"안녕하세요 pybo에 오신것을 환영합니다.\")\ndef question(request, page_question_id):\n    q = Question.objects.get(id=page_question_id)\n    q_context = {\n        \"id\": q.id,\n        \"subject\": q.subject,\n        \"content\": q.content\n    }\n    a = Answer.objects.filter(question_id=page_question_id)",
+        "detail": "pybo.views",
+        "documentation": {}
+    },
+    {
+        "label": "question",
+        "kind": 2,
+        "importPath": "pybo.views",
+        "description": "pybo.views",
+        "peekOfCode": "def question(request, page_question_id):\n    q = Question.objects.get(id=page_question_id)\n    q_context = {\n        \"id\": q.id,\n        \"subject\": q.subject,\n        \"content\": q.content\n    }\n    a = Answer.objects.filter(question_id=page_question_id)\n    a_context_list = a.values()\n    context = {",
         "detail": "pybo.views",
         "documentation": {}
     },
